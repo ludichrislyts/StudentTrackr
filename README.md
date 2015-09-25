@@ -10,7 +10,7 @@ _Have a question? Check out Askr to see if there is an answer. If not, wait for 
 
 ## Setup
 
-*clone project in onto your desktop
+*clone project onto your desktop
 *from the root project folder, run the command _python -m http.server 8000_ (if using Python 3 or later)
 *navigate to localhost:8000 in your browser and open the file _index.html_ in the project folder
 
