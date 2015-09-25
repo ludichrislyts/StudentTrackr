@@ -1,0 +1,19 @@
+<!--<div ng-show="student.teachers.length">
+	<h2>teachers for {{ student.text }}</h2>
+		<h5 ng-repeat="item in student.teachers | orderBy:'-votes'" ng-model="toggleApproved">
+			<button ng-click="changeVote(item,1)"><span class="glyphicon glyphicon-chevron-up"></span></button>
+				{{ item.votes }}
+			<button ng-click="changeVote(item,-1)"><span class="glyphicon glyphicon-chevron-down"></span></button>
+			{{ cutString(item.text) }} - {{student.category}}
+			{{ item.approved ? " - Present":" - Not Here"}}
+
+		</h5>
+</div>-->
+<div>
+	<h2>{{ student.name + "hi"}}</h2>
+		<div class="form-group" ng-model="togglePresent" ng-click="togglePresent()">
+			<input type="button" ng-model="togglePresent" value="{{ student.present ? ' - Present':' - Not Here'}}">
+		</div>
+
+	</form>
+</div>

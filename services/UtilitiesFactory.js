@@ -1,5 +1,14 @@
-questionList.factory('UtilitiesFactory', function() {
+studentTrackr.factory('UtilitiesFactory', function() {
 	return {
+		findTeacher: function(collection, teach){
+			var matched = null;
+			for (var i = 0; i < collection.length; i++){
+				if (collection[i] == teach){
+					matched = collection[i];
+					return matched;
+				}
+			}return null;			
+		},
 		findById: function(collection, id) {
 			for (var i=0; i < collection.length; i++) {
 				if( collection[i].id == id ) {
@@ -8,14 +17,13 @@ questionList.factory('UtilitiesFactory', function() {
 			}
 			return null;
 		},
-		findByCategory: function(collection, cat){
-			var matched = [];
-			for (var i = 0; i < collection.length; i++){
-				if (collection[i].category == cat){
-					matched.push(collection[i]);
+		findMatching: function(collection, name){
+			var matching = [];
+			for(var i = 0; i < collection.length; i++){
+				if(collection[i].teacher == name){
+					matching.push(collection[i]);
 				}
-			}
-			return matched;
+			}return matching;
 		}
 
 	};

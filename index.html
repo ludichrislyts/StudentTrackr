@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="questionList">
+<html lang="en" ng-app="studentTrackr">
 <head>
   <meta charset="UTF-8">
-  <title>Askr</title>
+  <title>Student Trackr</title>
   <script src="lib/angular.js"></script>
   <script src="lib/angular-ui-router.js"></script>
   <script src="app.js"></script>
-  <script src="controllers/QuestionsController.js"></script>
-  <script src="controllers/AnswersController.js"></script>
-  <script src="services/QuestionsFactory.js"></script>
+  <script src="controllers/StudentsController.js"></script>
+  <!--<script src="controllers/AnswersController.js"></script>-->
+  <script src="services/StudentsFactory.js"></script>
   <script src="services/UtilitiesFactory.js"></script>
   <script src="jquery-1.11.3.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -18,33 +18,33 @@
 </head>
 <body>
   <header>
-    <div class="col-md-12" ng-model="indexCategories" >
+    <div class="col-md-12" ng-model="indexTeachers" >
         <nav id="menu">
             <div class="row search-button-div">
-                <a type="button" class="btn btn-small btn-primary search-button" ui-sref='search'>Askr Search</a>
-                <input type="text" ng-model="query.text" class="form-control" placeholder="Search">
+                <a type="button" class="btn btn-small btn-primary search-button" ui-sref='search'>Trackr Search</a>
+                <input type="text" ng-model="query.name" class="form-control" placeholder="Search">
             </div>
-            <ul class="list-divider-pipe" ng-controller="AnswersCtrl">
+            <ul class="list-divider-pipe" ng-controller="StudentsCtrl">
               <li>
                 <a href="/">Home</a>
               </li>
                 <li>
-                    <a ui-sref="category_search({category:'Pool'})">Pool</a>
+                    <a ui-sref="teacher_search({teacher:teachers[0]})">Diane</a>
                 </li>
                 <li>
-                    <a ui-sref="category_search({category:'Drums'})">Drums</a>
+                    <a ui-sref="teacher_search({teacher:teachers[1]})">John</a>
                 </li>
                 <li>
-                    <a ui-sref="category_search({category:'Copy-Paste'})">Copy-Paste</a>
+                    <a ui-sref="teacher_search({teacher:teachers[2]})">Mary</a>
                 </li>
                 <li>
-                    <a ui-sref="category_search({category:'Brain Surgury'})">Brain Surgury</a>
+                    <a ui-sref="teacher_search({teacher:teachers[3]})">Brian</a>
                 </li>
                 <li>
-                    <a ui-sref="category_search({category:'Pizza'})">Pizza</a>
+                    <a ui-sref="teacher_search({teacher:teachers[4]})">Paula</a>
                 </li>
                 <li>
-                    <a ui-sref="category_search({category:'Misc'})">Misc</a>
+                    <a ui-sref="teacher_search({teacher:teachers[5]})">Mike</a>
                 </li>
             </ul>
 

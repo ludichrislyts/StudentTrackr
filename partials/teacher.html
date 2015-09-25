@@ -1,0 +1,12 @@
+<div class="col-md-12">
+  <h4>  {{ teacher }}   Students</h4>
+  <div class="row">
+    <div class="col-md-12">
+      <ul>
+        <li ng-repeat="item in teacherStudents">
+          <a ui-sref="students({studentId: item.id})">{{ item.name }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div ng-init="showTeachers = false">
+	<div ng-hide="showTeachers" class="row">
+		<div class="col-md-12">
+			<h3>Search a name</h3>
+			<form ng-submit="StudentsFactory.addStudent()" class="form-inline" role="form">
+				<div class="form-group">
+					<input class="form-control" id="user_student" ng-model="StudentsFactory.studentName" placeholder="Enter Name" required><br />
+					<label for="student_teacher">Select a teacher for your student</label><br>
+					<select ng-init="StudentsFactory.studentTeacher = teachers[0]" class="form-control" ng-model="studentTeacher" id="student_teacher" required>
+						<option  ng-repeat="teach in teachers" required>{{ teach }}</option>
+					</select><br />
+				</div>
+				<br> <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+<div ng-show="students.length">
+	<h1>Students</h1>
+		<span ng-click="showTeachers = true">
+			<h5 ng-repeat="item in students">
+				<a ui-sref='students.teachers({ studentId: item.id})'>{{item.name}}</a>
+			</h5>
+		</span>
+</div>
+<div ui-view></div>
+<!-- BACK BUTTON shows up when student.teachers view renders -->
+<span ng-click="showTeachers = false" ng-show="showTeachers">
+	<button>Back</button>
+</span>

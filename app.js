@@ -1,6 +1,6 @@
-var questionList = angular.module('questionList', ['ui.router']);
+var studentTrackr = angular.module('studentTrackr', ['ui.router']);
 
-questionList.config(function($stateProvider, $urlRouterProvider) {
+studentTrackr.config(function($stateProvider, $urlRouterProvider) {
 
 	// $stateProvider.state('home', {
 	// 	url: "",
@@ -12,29 +12,29 @@ questionList.config(function($stateProvider, $urlRouterProvider) {
 		templateUrl: "partials/home.html"
 	});
 
-	$stateProvider.state('questions', {
-		url:"/questions",
-		templateUrl: "partials/questions.html",
-		controller: "QuestionsCtrl"
+	$stateProvider.state('students', {
+		url:"/students",
+		templateUrl: "partials/students.html",
+		controller: "StudentsCtrl"
 	});
 
 	$stateProvider.state('search', {
 		url:"/search-results",
 		templateUrl: "partials/search.html",
-		controller: "QuestionsCtrl"
+		controller: "StudentsCtrl"
 	});
 
 
-	$stateProvider.state('questions.answers', {
-		url: "/:questionId",
-		templateUrl: "partials/questions.answers.html",
-		controller: "AnswersCtrl"
+	$stateProvider.state('students.teachers', {
+		url: "/:studentId",
+		templateUrl: "partials/students.teachers.html",
+		controller: "StudentsCtrl"
 	});
 
-	$stateProvider.state('category_search', {
-		url: "/:category",
-		templateUrl: "partials/category.html",
-		controller: "AnswersCtrl"
+	$stateProvider.state('teacher_search', {
+		url: "/:teacher",
+		templateUrl: "partials/teacher.html",
+		controller: "StudentsCtrl"
 	});
 
 
