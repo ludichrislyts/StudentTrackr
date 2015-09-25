@@ -16,7 +16,7 @@ questionList.controller('AnswersCtrl', function AnswersCtrl($scope, $stateParams
 	};
 
 	$scope.cutString = function(inString) {
-		var shortString = inString.slice(0,20);
+		var shortString = inString.slice(0,25);
 		//console.log(shortString);
 		return shortString;
 	}

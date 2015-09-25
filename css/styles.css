@@ -3,7 +3,7 @@ body {
     font: 400 20px/1.5 'Source Sans Pro',Open Sans,Roboto,Helvetica,Arial,sans-serif;
     color: #333;
     margin: 0;
-    background-color: #fff
+    background-color: #999
 }
 
 header,#main,footer {
@@ -284,9 +284,9 @@ footer a:hover {
     text-decoration: underline
 }
 .shadow{
-  -moz-box-shadow: 3px 3px 4px 5px #ccc;
-  -webkit-box-shadow: 3px 3px 4px 5px #ccc;
-  box-shadow: 3px 3px 4px 5px #ccc
+  -moz-box-shadow: 1px 3px 4px 5px #ccc;
+  -webkit-box-shadow: 1px 3px 4px 5px #ccc;
+  box-shadow: 1px 3px 4px 5px #ccc
 }
 .footer-nav {
     display: -webkit-box;
@@ -338,9 +338,10 @@ footer a:hover {
 
 #home-intro {
     max-width: 1000px;
+    width:100%;
     margin: 0 auto;
     padding-top: 30px;
-    text-align: center
+    text-align: left
 }
 
 #home-downloadbutton {

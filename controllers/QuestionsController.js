@@ -5,7 +5,7 @@ questionList.controller('QuestionsCtrl', function QuestionsCtrl($scope, Question
 	$scope.questionCategory = QuestionsFactory.categories[0];
 
 	$scope.cutString = function(inString) {
-		var shortString = inString.slice(0,20);
+		var shortString = inString.slice(0,25);
 		//console.log(shortString);
 		return shortString;
 	}
