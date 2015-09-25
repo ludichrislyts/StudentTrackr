@@ -4,7 +4,7 @@
     <div class="col-md-12">
       <ul>
         <li ng-repeat="item in questions">
-          {{ item.text + " - " + item.answered  }}
+          <a ui-sref="questions.answers({questionId: item.id})">{{ item.text + " - " + item.answered  }}</a>
         </li>
       </ul>
     </div>

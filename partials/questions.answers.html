@@ -4,7 +4,7 @@
 			<button ng-click="changeVote(item,1)"><span class="glyphicon glyphicon-chevron-up"></span></button>
 				{{ item.votes }}
 			<button ng-click="changeVote(item,-1)"><span class="glyphicon glyphicon-chevron-down"></span></button>
-			{{ cutString(item.text)}}
+			{{ cutString(item.text) }} - {{question.category}}
 			{{ item.approved ? " - Approved":" - Not Approved"}}
 			<input type="checkbox" ng-model="toggleApproved" ng-change="approveAnswer(item, toggleApproved)">
 		</h5>
