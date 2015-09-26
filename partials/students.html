@@ -2,9 +2,9 @@
 	<div ng-show="students.length && !showTeachers">
 		<h1>Students</h1>
 			<span ng-click="showTeachers = true">
-				<h5 ng-repeat="item in students">
+				<p1 ng-repeat="item in students">
 					<a ui-sref='students.teachers({ studentId: item.id})'>{{item.name}}</a>
-				</h5>
+				<br />
 			</span>
 	</div>
 	<div ng-hide="showTeachers" class="row">
@@ -13,10 +13,10 @@
 			<form ng-submit="StudentsFactory.addStudent()" class="form-inline" role="form">
 				<div class="form-group">
 					<input class="form-control" id="user_student" ng-model="StudentsFactory.studentName" placeholder="Enter Name" required><br />
-					<label for="student_teacher">Select a teacher for your student</label><br>
 					<div class="form-group">
-						<select ng-init="studentTeacher = teachers[0]" class="form-control" ng-model="studentTeacher" id="student_teacher" required>
-							<option ng-model="studentTeacher" ng-repeat="teach in teachers" required>{{ teach }}</option>
+						<select ng-init="StudentsFactory.teachers[0]" class="form-control" ng-model="StudentsFactory.studentTeacher" id="student_teacher" required>
+							<label for="student_teacher">Select a teacher for your student</label><br>
+							<option ng-repeat="teach in teachers" required>{{ teach }}</option>
 						</select>
 					</div>
 					<button type="submit" class="btn btn-default">Submit</button>

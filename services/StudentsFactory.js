@@ -1,4 +1,4 @@
-studentTrackr.factory('StudentsFactory', function StudentsFactory ($stateParams) {
+studentTrackr.factory('StudentsFactory', function StudentsFactory () {
 	var factory = {};
 	// fill student array with initial values
 	var populate = [{ name: "Chris Lytsell", id: 1, present: false, teacher: "Diane"},
