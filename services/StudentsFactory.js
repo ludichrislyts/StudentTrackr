@@ -6,8 +6,7 @@ studentTrackr.factory('StudentsFactory', function StudentsFactory () {
 	factory.addStudent = function() {
 		factory.students.push({ 	  name: factory.studentName,
 																  id: factory.students.length +1,
-														teachers: [],
-														 present: true,
+														 present: false,
 														 teacher: factory.studentTeacher
 													});
 		factory.studentName = null;

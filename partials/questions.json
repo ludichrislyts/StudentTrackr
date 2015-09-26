@@ -1,7 +1,0 @@
-{
-    text: "This is a question",
-    id: 1,
-    answers: [],
-    answered: "Not Answered",
-    category: "Pool"
-}

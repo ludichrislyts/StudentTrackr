@@ -10,10 +10,12 @@
 		</h5>
 </div>-->
 <div>
-	<h2>{{ student.name + "hi"}}</h2>
+	<h2>{{ student.name }}</h2>
+	<!-- toggle present value section -->
+	<!--<form>-->
 		<div class="form-group" ng-model="togglePresent" ng-click="togglePresent()">
 			<input type="button" ng-model="togglePresent" value="{{ student.present ? ' - Present':' - Not Here'}}">
 		</div>
 
-	</form>
+	<!--</form>-->
 </div>

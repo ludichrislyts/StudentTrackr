@@ -3,7 +3,8 @@
   <div class="row">
     <div class="col-md-12">
       <h2 ng-show="students.length && filtered.length">Students Matching Search</h2>
-      <h2 ng-show="students.length && !filtered.length">No Matches</h2>
+      <h2 ng-show="students.length && !filtered.length">No Students Matching Search</h2>
+      <h2 ng-show="!students.length && !filtered.length">No Students on File</h2>
       <ul>
         <li ng-repeat="item in filtered = (students | filter:query )">
           {{ item.name}} " - " {{ item.present  }}
