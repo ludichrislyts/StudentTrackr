@@ -1,8 +1,13 @@
-studentTrackr.factory('StudentsFactory', function StudentsFactory () {
+studentTrackr.factory('StudentsFactory', function StudentsFactory ($stateParams) {
 	var factory = {};
-	factory.students = [];
+	// fill student array with initial values
+	var populate = [{ name: "Chris Lytsell", id: 1, present: false, teacher: "Diane"},
+									{ name: "Kim Jones", id: 2, present: false, teacher: "Diane"},
+									{ name: "Jim Jenkens", id: 3, present: false, teacher: "John"},
+									{ name: "Joe Schmoe", id: 4, present: false, teacher: "John"}];
+	factory.students = populate;
 	factory.teachers = ["Diane", "John", "Mary", "Brian", "Paula", "Mike"];
-
+	
 	factory.addStudent = function() {
 		factory.students.push({ 	  name: factory.studentName,
 																  id: factory.students.length +1,

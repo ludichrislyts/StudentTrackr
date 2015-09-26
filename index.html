@@ -7,6 +7,7 @@
   <script src="lib/angular-ui-router.js"></script>
   <script src="app.js"></script>
   <script src="controllers/StudentsController.js"></script>
+
 <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
   <script src="services/StudentsFactory.js"></script>
   <script src="services/UtilitiesFactory.js"></script>
@@ -21,10 +22,8 @@
   <header>
     <div class="col-md-12" ng-model="indexTeachers" >
         <nav id="menu">
+                <h4 style="color: red" class="">Teacher Roster: </h4>
               <ul class="list-divider-pipe" ng-controller="StudentsCtrl">
-                <li>
-                  <a href="/">Home</a>
-                </li>
                   <li>
                       <a ui-sref="teacher_search({teacher:teachers[0]})">Diane</a>
                   </li>
@@ -43,9 +42,8 @@
                   <li>
                       <a ui-sref="teacher_search({teacher:teachers[5]})">Mike</a>
                   </li>
-                <li class="row">
-                    <a type="button" class="btn btn-small btn-primary search-button" ui-sref='search'>Trackr Search</a>
-                    <input type="text" ng-model="query.name" class="form-control" placeholder="Search">
+                <li>
+                  <a href="/">HOME PAGE</a>
                 </li>
               </ul>
 
@@ -54,6 +52,7 @@
     </div>
   </header>
   <div id="home-intro" class="well shadow">
+
     <div ui-view>
 
     </div>

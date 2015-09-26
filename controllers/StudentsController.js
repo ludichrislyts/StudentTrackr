@@ -10,14 +10,4 @@ studentTrackr.controller('StudentsCtrl', function StudentsCtrl($scope, $statePar
 		if($scope.student.present == true){$scope.student.present = false;}
 			else{$scope.student.present = true;}
 	}
-
-	// $http.get('questions.json')
-	// 	.success(function (response) {
-	// 		$scope.questions = response;
-	// 	});
-
-
-	//$scope.hide = QuestionsFactory.hideQuestionSubmit();
-
-	//var defaultCategory = QuestionsFactory.categories[0];
 });
