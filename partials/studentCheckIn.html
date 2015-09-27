@@ -3,7 +3,7 @@
 		<!-- toggle present value section -->
 			<div class="form-group" ng-model="togglePresent">
 				<p1>{{ student.name }}  </p1>
-				<input  class="form-control" ng-click="togglePresent()" type="button" ng-model="togglePresent" value="{{ student.present ? ' You\'re Here!':' Check in'}}">
+				<input  class="form-control" ng-click="togglePresent()" type="button" ng-model="togglePresent" value="{{ student.present ? 'You\'re Here!':'Check in'}}">
 			</div>
 
 			<span ng-model="toggleCheck" ng-show="studentCheck()" style="margin-left:50%" >
