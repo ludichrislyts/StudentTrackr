@@ -10,9 +10,9 @@ _Provides a log-in/Log-out page for students, and a teacher page to check which 
 
 ## Setup
 
-*clone project onto your desktop
-*from the root project folder, run the command _python -m http.server 8000_ (if using Python 3 or later)
-*navigate to localhost:8000 in your browser and open the file _index.html_ in the project folder
+* clone project onto your desktop
+* from the root project folder, run the command _python -m http.server 8000_ (if using Python 3 or later)
+* navigate to localhost:8000 in your browser and open the file _index.html_ in the project folder
 
 
 ## Technologies Used
