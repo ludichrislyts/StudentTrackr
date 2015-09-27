@@ -25,11 +25,6 @@ studentTrackr.factory('UtilitiesFactory', function() {
 				}
 			}return matching;
 		}
-		// getPresentValue: function(studentName){
-		// 	var value = studentName.present;
-		// 	return value;
-		// }
-
 	};
 
 });

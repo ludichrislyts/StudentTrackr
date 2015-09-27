@@ -8,8 +8,8 @@ body {
 .flexi-box{
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  align-content: flex-start;
+  /*align-items: flex-start;*/
+  /*align-content: flex-start;*/
 }
 #check {
   fill: none;
