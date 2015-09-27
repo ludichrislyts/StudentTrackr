@@ -1,4 +1,4 @@
-# Askr
+# Student Trackr
 
 ##### _A simple student check in page_
 
