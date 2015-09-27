@@ -9,8 +9,8 @@
     </div>
     
     <div class="col-md-6">
-      <h3>Students possibly skipping class</h3>
       <ul>
+        <h3>Students possibly skipping class</h3>
         <li class="red-light" ng-repeat="item in teacherStudents | filter:false:present">{{ item.name }}</li>
       </ul>
     </div>

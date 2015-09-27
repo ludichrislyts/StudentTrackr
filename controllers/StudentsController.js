@@ -10,12 +10,17 @@ studentTrackr.controller('StudentsCtrl', function StudentsCtrl($scope, $statePar
 	
 	$scope.StudentsFactory = StudentsFactory;
 	
-	$scope.studentTeacher = $scope.teach;
+	$scope.studentCheck = function(){
+		return $scope.student.present;
+	}
 	
+	// $scope.studentCheck = $stateParams.student.present;
+
 	$scope.teacher = UtilitiesFactory.findTeacher(StudentsFactory.teachers, $stateParams.teacher);
 
 	$scope.togglePresent = function() {
 		if($scope.student.present == true){$scope.student.present = false;}
 			else{$scope.student.present = true;}
+		return $scope.student.present;
 	}
 });

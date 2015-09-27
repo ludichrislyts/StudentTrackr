@@ -1,0 +1,16 @@
+<div class="container" ng-show="showTeachers" ng-model="toggleCheck">
+	<div class="row">
+		<p1>{{ student.name }}</p1>
+		<!-- toggle present value section -->
+			<span class="form-group" ng-model="togglePresent">
+				<input  class="form-control" ng-click="togglePresent()" type="button" ng-model="togglePresent" value="{{ student.present ? ' - Present':' - Not Here'}}">
+			</span>
+
+			<span ng-model="toggleCheck" ng-show="studentCheck()" style="margin-top:25%" >
+				<svg id="" z-index="1" width="150" height="100">
+					<path id="check" d="M10,30 l30,50 l95,-70" />
+				</svg>
+			</span>  
+
+	</div>
+</div>	

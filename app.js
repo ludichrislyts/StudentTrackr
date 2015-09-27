@@ -27,7 +27,7 @@ studentTrackr.config(function($stateProvider, $urlRouterProvider) {
 
 	$stateProvider.state('students.teachers', {
 		url: "/:studentId",
-		templateUrl: "partials/students.teachers.html",
+		templateUrl: "partials/studentCheckIn.html",
 		controller: "StudentsCtrl"
 	});
 
