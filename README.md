@@ -1,12 +1,12 @@
 # Askr
 
-##### _A question and answer based website_
+##### _A simple student check in page_
 
-#### Rick Hills and Chris Lytsell.
+#### Chris Lytsell.
 
 ## Description
 
-_Have a question? Check out Askr to see if there is an answer. If not, wait for one!_
+_Provides a log-in/Log-out page for students, and a teacher page to check which students are present_
 
 ## Setup
 
@@ -21,7 +21,7 @@ AngularJS, HTML, CSS, Javascript
 
 ### Legal
 
-Copyright (c) 2015 Rick Hills & Chris Lytsell.  
+Copyright (c) 2015 Chris Lytsell.  
 
 This software is licensed under the MIT license.
 
