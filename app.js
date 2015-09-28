@@ -9,21 +9,30 @@ studentTrackr.config(function($stateProvider, $urlRouterProvider) {
 
 	$stateProvider.state('home', {
 		url: "",
-		templateUrl: "partials/home.html"
+		views:{
+			'header': {
+				templateUrl: "partials/header.html",
+				controller: "StudentsController",
+			},
+			'body': {
+				templateUrl: "partials/home.html",
+			},
+		}
 	});
 
 	$stateProvider.state('students', {
 		url:"/students",
-		templateUrl: "partials/students.html",
-		controller: "StudentsCtrl"
+		views:{
+			'header': {
+				templateUrl: "partials/header.html",
+				controller: "StudetnsController",
+			},
+			'body':{
+				templateUrl: "partials/students.html",
+				controller: "StudentsCtrl",
+			},
+		}
 	});
-
-	$stateProvider.state('search', {
-		url:"/search-results",
-		templateUrl: "partials/search.html",
-		controller: "StudentsCtrl"
-	});
-
 
 	$stateProvider.state('students.teachers', {
 		url: "/:studentId",

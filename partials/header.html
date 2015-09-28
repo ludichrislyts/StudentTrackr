@@ -1,0 +1,32 @@
+<header>
+  <div class="col-md-12" ng-model="indexTeachers" >
+      <nav id="menu">
+              <h4 style="color: red" class="">Teacher Roster: </h4>
+            <ul class="list-divider-pipe" ng-controller="StudentsCtrl">
+                <li>
+                    <a ui-sref="teacher_search({teacher:teachers[0]})">Diane</a>
+                </li>
+                <li>
+                    <a ui-sref="teacher_search({teacher:teachers[1]})">John</a>
+                </li>
+                <li>
+                    <a ui-sref="teacher_search({teacher:teachers[2]})">Mary</a>
+                </li>
+                <li>
+                    <a ui-sref="teacher_search({teacher:teachers[3]})">Brian</a>
+                </li>
+                <li>
+                    <a ui-sref="teacher_search({teacher:teachers[4]})">Paula</a>
+                </li>
+                <li>
+                    <a ui-sref="teacher_search({teacher:teachers[5]})">Mike</a>
+                </li>
+              <li>
+                <a href="/">HOME PAGE</a>
+              </li>
+            </ul>
+
+      </nav>
+
+  </div>
+</header>

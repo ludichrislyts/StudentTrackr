@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
+  <!-- <header>
     <div class="col-md-12" ng-model="indexTeachers" >
         <nav id="menu">
                 <h4 style="color: red" class="">Teacher Roster: </h4>
@@ -49,11 +49,11 @@
         </nav>
 
     </div>
-  </header>
+  </header> -->
   <div id="home-intro" class="well shadow">
 
-    <div ui-view>
-
+    <div ui-view="header"></div>
+      <div ui-view="body"></div>
     </div>
   </div>
 </body>
