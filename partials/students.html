@@ -3,7 +3,7 @@
 		<h1>Students</h1>
 			<span ng-click="showTeachers = true">
 				<p1 ng-repeat="item in students">
-					<a ui-sref='students.teachers({ studentId: item.id})'>{{item.name}}</a>
+					<a ui-sref='studentCheckIn({studentId: item.id})'>{{item.name}}</a>
 				<br />
 			</span>
 	</div>
@@ -27,10 +27,10 @@
 		</div>
 	</div>
 </div>
-<div ui-view></div>
+<div ui-view="body"></div>
 <!-- BACK BUTTON shows up when student.teachers view renders -->
 <div class="col-md-9" ng-click="showTeachers = false" ng-show="showTeachers">
 
-	<a ui-sref="" class="button btn btn-primary home-button-toggler">Back</a>
+	<a ui-sref="home" class="button btn btn-primary home-button-toggler">Back</a>
 
 </div>

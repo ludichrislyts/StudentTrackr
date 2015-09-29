@@ -12,7 +12,7 @@ studentTrackr.config(function($stateProvider, $urlRouterProvider) {
 		views:{
 			'header': {
 				templateUrl: "partials/header.html",
-				controller: "StudentsController",
+				controller: "StudentsCtrl",
 			},
 			'body': {
 				templateUrl: "partials/home.html",
@@ -25,7 +25,7 @@ studentTrackr.config(function($stateProvider, $urlRouterProvider) {
 		views:{
 			'header': {
 				templateUrl: "partials/header.html",
-				controller: "StudetnsController",
+				controller: "StudentsCtrl",
 			},
 			'body':{
 				templateUrl: "partials/students.html",
@@ -34,16 +34,32 @@ studentTrackr.config(function($stateProvider, $urlRouterProvider) {
 		}
 	});
 
-	$stateProvider.state('students.teachers', {
+	$stateProvider.state('studentCheckIn', {
 		url: "/:studentId",
-		templateUrl: "partials/studentCheckIn.html",
-		controller: "StudentsCtrl"
+		views:{
+			'header':{
+				templateUrl: "partials/header.html",
+				controller: "StudentsCtrl",
+			},
+			'body':{
+				templateUrl: "partials/studentCheckIn.html",
+				controller: "StudentsCtrl",
+			},
+		}
 	});
 
 	$stateProvider.state('teacher_search', {
-		url: "/:teacher",
-		templateUrl: "partials/teacher.html",
-		controller: "StudentsCtrl"
+		url: "/:teacher/",
+		views:{
+			'header':{
+				templateUrl: "partials/header.html",
+				controller: "StudentsCtrl",
+			},
+			'body':{
+				templateUrl: "partials/teacher.html",
+				controller: "StudentsCtrl",
+			},
+		}
 	});
 
 

@@ -1,4 +1,4 @@
-<div class="container" ng-show="showTeachers" ng-model="toggleCheck">
+<div class="container" ng-show="!showTeachers" ng-model="toggleCheck">
 	<div class="flexi-box">
 		<!-- toggle present value section -->
 			<div class="form-group" ng-model="togglePresent">
@@ -10,7 +10,9 @@
 				<svg id="" z-index="1" width="150" height="100">
 					<path id="check" d="M10,30 l30,50 l95,-70" />
 				</svg>
-			</span>  
+			</span>
 
 	</div>
-</div>	
+	<a ng-show="!showTeachers" ui-sref="students" class="button btn btn-primary home-button-toggler">Back</a>
+
+</div>
